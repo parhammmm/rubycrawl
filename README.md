@@ -4,8 +4,8 @@ A simple crawler written for learning basics of ruby. Should not be used for any
 
 ## Installation
 
-    $ git clone path 
-	$ cd rubycrawl
+    $ git clone https://github.com/skinnyp/rubycrawl.git
+    $ cd rubycrawl
     $ bundle install 
 
 ## Usage
