@@ -1,0 +1,20 @@
+#!/usr/bin/env ruby
+
+require 'optparse'
+require 'rubycrawl'
+
+options = {}
+OptionParser.new do |opts|
+	opts.banner = "Usage: rubycrawl seed max_depth"
+end.parse!
+
+if ARGV.length != 2 
+	puts "missing arguments use rubycrawl --help for usage"
+	exit(-1)
+end
+
+seed = ARGV[0]
+max_depth = ARGV[1].to_i
+
+boss = RubyCrawl::Boss.new seed, max_depth 
+boss.crawl
